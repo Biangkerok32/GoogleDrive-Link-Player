@@ -1,7 +1,7 @@
 <?php
 $method = $_POST['files']; // Method GET data via POST Form //
 /////////////////////
- $search = "https://api.heirro.net/developers/gdrive/get.json?u=".$method;
+ $search = "http://googledriveplayer.herokuapp.com/json.php?id=".$method;
  $result = file_get_contents($search);
  $data = json_decode($result, true);
 /////////////////////
