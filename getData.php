@@ -1,7 +1,7 @@
 <?php
 $method = $_POST['files']; // Method GET data via POST Form //
 /////////////////////
- $search = "http://googledriveplayer.herokuapp.com/json.php?id=".$method;
+ $search = "http://googledriveplayer.herokuapp.com/json.php?id=".$method; // reference https://github.com/Biangkerok32/Google-Drive-Player-Script.git
  $result = file_get_contents($search);
  $data = json_decode($result, true);
 /////////////////////
